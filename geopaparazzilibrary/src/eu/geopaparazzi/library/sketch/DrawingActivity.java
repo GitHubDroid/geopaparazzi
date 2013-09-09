@@ -41,6 +41,10 @@ import eu.geopaparazzi.library.util.Utilities;
 public class DrawingActivity extends Activity implements View.OnTouchListener {
     private static final int MENU_SAVE = Menu.FIRST;
     private static final int MENU_CANCEL = 2;
+    
+    /**For "Add to Map" menu option in options menu **/
+    private static final int MENU_ADD = 3;
+    
 
     private DrawingSurface drawingSurface;
     private DrawingPath currentDrawingPath;
@@ -126,6 +130,10 @@ public class DrawingActivity extends Activity implements View.OnTouchListener {
         super.onCreateOptionsMenu(menu);
         menu.add(Menu.NONE, MENU_SAVE, 1, R.string.save).setIcon(android.R.drawable.ic_menu_save);
         menu.add(Menu.NONE, MENU_CANCEL, 2, R.string.cancel).setIcon(android.R.drawable.ic_menu_close_clear_cancel);
+        
+        /** Include Add Map to Canvas option in Options Menu **/
+        menu.add(Menu.NONE, MENU_ADD, 3, R.string.add_map).setIcon(android.R.drawable.ic_menu_add);
+        
         return true;
     }
 
