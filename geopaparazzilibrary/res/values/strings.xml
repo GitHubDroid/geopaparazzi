@@ -60,6 +60,10 @@
     <string name="couldnt_find_geocache_results">Could not find any location based on the search. Try to change the search string.</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
+    
+    <!-- Add map to canvas menu option label for  on in Options Menu -->
+    <string name="add_map">Add Map to Canvas</string>
+    
     <string name="take_picture">Take picture</string>
     <string name="read_nfc_uid">Read tag id</string>
     <string name="draw_sketch">Draw sketch</string>
